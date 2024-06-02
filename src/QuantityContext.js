@@ -22,8 +22,8 @@ class QuantityProvider extends Component {
 
   updateQuantityAndAmount = (id, quantity) => {
     var total = 0;
-    var index = 0;
-    var price = 0;
+    // var index = 0;
+    // var price = 0;
     this.state.products.forEach((data, i) => {
       if (data.id === id) {
         total += data.price * quantity;
@@ -32,10 +32,10 @@ class QuantityProvider extends Component {
       } else {
         total += data.price;
       }
-      if (data.id === id) {
-        index = i;
-        price = data.price;
-      }
+      // if (data.id === id) {
+      //   index = i;
+      //   price = data.price;
+      // }
     });
     this.setState({products: this.state.products.map(x => x.id === id ? {...x, quantity:quantity} : x)});
 
