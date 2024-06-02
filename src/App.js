@@ -18,7 +18,7 @@ class App extends Component {
                 <div className="card">
                   <div className="imgSec">
                     <div className="img">
-                      <img src="" />
+                      <img src={data.thumbnail} alt={data.brand} />
                     </div>
                     <div className="info">
                       <h2>{data.brand}</h2>

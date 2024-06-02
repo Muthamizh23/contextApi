@@ -45,7 +45,7 @@ class QuantityProvider extends Component {
   };
 
   render() {
-    const { perUnitQuantity, totalQuantity, amount, products } = this.state;
+    const { amount, products } = this.state;
     const { updateQuantityAndAmount } = this;
 
     return (
